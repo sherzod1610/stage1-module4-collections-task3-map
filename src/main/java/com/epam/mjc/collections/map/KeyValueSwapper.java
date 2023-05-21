@@ -12,7 +12,7 @@ public class KeyValueSwapper {
             if (map.containsKey(sourceMap.get(i))) {
                 int repeatedKeyValue = map.get(sourceMap.get(i));
                 if (repeatedKeyValue < i) {
-                    map.put(sourceMap.get(i), i);
+                    map.put(sourceMap.get(i), repeatedKeyValue);
                 }
             } else {
                 map.put(sourceMap.get(i), i);
